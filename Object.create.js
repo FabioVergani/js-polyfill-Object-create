@@ -2,8 +2,8 @@ if(typeof Object.defineProperty !=='function'){
  Object.defineProperty=function(a,b,c){
 	var o=a,p=b,d=c,g=d.get,s=d.set;
 	if(g||s){
-		if(g){o.__defineGetter__(p,g);};
-		if(s){o.__defineSetter__(p,s);};
+	 if(g){o.__defineGetter__(p,g);};
+	 if(s){o.__defineSetter__(p,s);};
 	}else{
 	 o[p]=d.value;
 	};
